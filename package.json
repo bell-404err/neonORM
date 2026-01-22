@@ -1,0 +1,22 @@
+{
+  "name": "neonorm",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "npx tsx index.ts",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "25.0.9",
+    "@types/pg": "^8.16.0",
+    "tsx": "4.21.0",
+    "typescript": "5.9.3"
+  },
+  "dependencies": {
+    "pg": "^8.17.2"
+  }
+}
