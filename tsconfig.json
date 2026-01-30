@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    // Module & Target Configuration (Modern ESNext)
+    "module": "NodeNext",
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "moduleResolution": "NodeNext",
+    
+    // Output Configuration
+    "outDir": "./dist",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "removeComments": false,
+    
+    // Incremental Compilation (faster rebuilds)
+    "incremental": true,
+    "tsBuildInfoFile": "./dist/.tsbuildinfo",
+    
+    // Strict Type Checking (Maximum Safety)
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    
+    // Module & Import Configuration
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    
+    // Path Aliases (for cleaner imports)
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@core/*": ["src/core/*"],
+      "@types/*": ["src/types/*"],
+      "@utils/*": ["src/utils/*"],
+      "@schema/*": ["src/core/schema-parser/*"],
+      "@client/*": ["client/*"],
+      "@emul/*": ["emul/*"]
+    },
+    
+    // Performance & Best Practices
+    "skipLibCheck": true,
+    "pretty": true
+  },
+  "include": ["src/**/*.ts", "client/**/*.ts", "*.ts"],
+  "exclude": ["node_modules", "dist", "**/*.spec.ts", "**/*.test.ts", "emul"]
+}

@@ -1,0 +1,7 @@
+node_modules
+dist
+*.log
+package-lock.json
+*.md
+tsconfig.json
+.eslintrc.cjs
